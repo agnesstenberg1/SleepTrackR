@@ -1,0 +1,12 @@
+html, body, #root {
+  background-color: #150E38;
+  margin: 0;
+}
+
+.logg-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}

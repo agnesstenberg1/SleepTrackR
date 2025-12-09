@@ -1,0 +1,13 @@
+.cirkle {
+    height: 210px;
+    width: 210px;
+    background-color: #1E1456;
+    border-radius: 50%;
+    border: 1px solid rgb(255, 255, 255, 0.4) ;
+    box-shadow:0 20px 20px black!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F4EDE7;
+   
+}
