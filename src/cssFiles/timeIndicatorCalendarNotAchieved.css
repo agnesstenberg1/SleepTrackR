@@ -1,0 +1,20 @@
+.circular-bar-calendar-not {
+    width: 50px;
+       height: 50px;
+       background: conic-gradient(#D84648 0deg 280deg, transparent 0deg);
+       transform: rotate(180deg);
+       border-radius: 50%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+}
+
+  .circular-bar-calendar-not::before {
+       content: "";
+       position: absolute;
+       width: 40px;
+       height: 40px;
+       background: rgb(31, 0, 102); /* göra i rätt färg */
+       border-radius: 50%;
+       
+   }

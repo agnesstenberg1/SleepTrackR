@@ -8,11 +8,31 @@ import React, { useState, useContext, useEffect } from "react"; // från förel�
 import { rdb } from "./firebase";
 import { ref, push, onValue, remove } from "firebase/database";
 
-import "./cssFiles/resultAchieved.css";
+
+
+
+
+
 
 //import Achieved from './components/timeIndicator/achieved';
-//import ResultAchieved from './components/feedback/resultAchieved';
+import ResultAchieved from './components/feedback/resultAchieved';
+//import LoggButton from "./components/buttons/loggButton";
+import ResultNotAchieved from './components/feedback/resultNotAchieved';
+import TimeIndicatorCalendarNotAchieved from './components/timeIndicator/timeIndicatorCalendarNotAchieved';
+import TimeIndicatorSmallerNotAchieved from './components/timeIndicator/timeIndicatorSmallerNotAchieved';
+import AchievedMascot from "./components/feedback/achievedMascot";
+import NotAchievedMascot from "./components/feedback/notAchievedMascot";
+import TimeIndicatorAchieved from "./components/timeIndicator/timeIndicatorAchieved";
+import TimeIndicatorNotAchieved from "./components/timeIndicator/timeIndicatorNotAchieved";
+import LoggButtonTime from "./components/timeIndicator/loggButtonTime";
 import LoggButton from "./components/buttons/loggButton";
+import Rewards from "./components/ikons/rewards";
+import Trash from "./components/ikons/trash";
+import Logo from "./components/logo/logo";
+import CloseButtonLight from "./components/buttons/closeButtonLight";
+import SmallButton from "./components/buttons/smallButton";
+import HappyMascot from "./components/mascot/happyMascot";
+import TiredMascot from "./components/mascot/tiredMascot";
 
 function App() {
   const [logs, setLogs] = useState([]);
@@ -93,9 +113,10 @@ function App() {
   };
 
   return (
-    <div class="logg-container">
-      <LoggButton />
-    </div>
+    
+
+      <ResultAchieved/>
+    
   );
 }
 

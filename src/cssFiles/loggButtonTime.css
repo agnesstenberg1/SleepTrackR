@@ -1,0 +1,31 @@
+.logg-button-time {
+    position: relative;
+    width: 250px;
+    height: 250px;
+}
+
+.logg-timer {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.logg-button-1 {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.95);
+    z-index: 2;
+    
+}
+
+.logg-button-1, .cirkle {
+    box-shadow: none !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  
+}

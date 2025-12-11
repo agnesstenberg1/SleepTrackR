@@ -1,6 +1,8 @@
 html, body, #root {
   background-color: #150E38;
   margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
 .logg-container {

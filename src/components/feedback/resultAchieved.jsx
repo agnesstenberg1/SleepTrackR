@@ -1,18 +1,27 @@
 import React from "react";
+import AchievedMascot from "./achievedMascot";
+import TimeIndicatorSmallerAchieved from "../timeIndicator/timeIndicatorSmallerAchieved";
+import CloseButtonLight from "../buttons/closeButtonLight";
+import "../../cssFiles/resultAchieved.css";
 
 
     
-    function ResultAchieved ()  {
+    function ResultAchieved ({onClose})  {
         return (
 
 <div className="wrapper">
+    <CloseButtonLight onClose={onClose} className="close-button"/>
 <h1>Resultat:</h1>
-<div className="circular-bar"></div>
-<p className="info-text">
-       Du klarade inte inte ditt sömnmål idag! Försök lägg dig tidigare ikväll,
-       du klarar detta
-</p>
-<p className="current-stats">7h & 2min 85p</p>
+
+ <TimeIndicatorSmallerAchieved/>
+
+<p className="current-stats">8h & 49min</p> 
+ <p className="current-stats-2">120p</p>
+
+  
+    <AchievedMascot/>
+   
+   
 </div>
 
         );

@@ -5,6 +5,7 @@ import './index.css'
 //import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import App from './App';
+import { BrowserRouter } from 'react-router-dom';
 //import './App.css'
 //import ResultAchieved from './components/feedback/resultAchieved';
 
@@ -19,6 +20,8 @@ import App from './App';
 
 createRoot(document.getElementById('root')).render(
   
+  <BrowserRouter>
   <App/>
+  </BrowserRouter>
 
 );

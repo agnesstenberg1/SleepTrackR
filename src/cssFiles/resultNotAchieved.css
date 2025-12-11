@@ -1,4 +1,4 @@
-  .wrapper {
+  .wrapper-not {
        position: relative;
        width: 370px;
        height: 418px;
@@ -8,15 +8,18 @@
        align-items: center;
        justify-content: center;
        flex-direction: column;
-       gap: 30px;
+       gap: 190px;
        color: white;
+    
    }
   
    h1 {
        font-size: 24px;
+       margin-top: 25px;
+      
    }
-   .current-stats {
-       position: absolute;
+   .current-stats-not {
+        position: absolute;
        word-break: break-all;
        text-align: center;
        top: 35%;
@@ -24,9 +27,10 @@
        font-size: 16px;
        width: 120px;
        font-weight: bold;
+       
    }
-   .current-stats-2 {
-    position: absolute;
+   .current-stats-2-not {
+     position: absolute;
        word-break: break-all;
        text-align: center;
        top: 42%;
@@ -35,10 +39,13 @@
        width: 120px;
    }
 
-   .close-button {
+    .close-button-not {
     position: absolute;
     top: 8px;
     right: 8px;
     z-index: 10;
     cursor: pointer;
+   
 }
+
+   
