@@ -1,0 +1,16 @@
+.rewards-mine {
+    margin-bottom: 50px;
+}
+
+.titel-1, .titel-2 {
+    color:#F4EDE7 ;
+    margin-left: 10px;
+    margin-bottom: 7px;
+}
+
+.rewards-scroll {
+  height: 500px;
+  overflow-y: auto;
+  padding: 10px;
+
+}

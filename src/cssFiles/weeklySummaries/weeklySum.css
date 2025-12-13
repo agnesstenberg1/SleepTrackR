@@ -1,0 +1,42 @@
+.weekly-sum {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    min-height: 50vh;   
+}
+
+.nav-arrows {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.week-text {
+    color:#F4EDE7 ;
+    font-size: 20px;
+}
+
+.box-weekly {
+    height: 78px;
+    width: 279px;
+    background-color:#1E1456 ;
+    margin-top: 15px;
+    border-radius:10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+   
+    
+}
+.box-text {
+    color:#F4EDE7 ;
+    font-size: 16px;
+}
+
+.goal-text {
+    color:#FFF8C5 ; 
+    font-size: 16px;
+}

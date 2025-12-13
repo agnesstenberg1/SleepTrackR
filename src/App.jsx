@@ -38,13 +38,17 @@ import HappyMascot from "./components/mascot/happyMascot";
 import SleepyMascot from "./components/mascot/tiredMascot";
 import SleepTextIkon from "./components/information/sleepTextIkon";
 import Form1 from "./components/forms/form1";
-
+import WeeklySum from "./components/weeklySummaries/WeeklySum";
+import RewardsScroll from "./components/rewards/rewardsScroll";
+import TemplateView from "./components/templates/templateView";
+import LoggView from "./viewes/loggView";
 
 function App() {
   const [logs, setLogs] = useState([]);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
   const [date, setDate] = useState("");
+
 
   // --- Real-time listener ---
   useEffect(() => {
@@ -121,16 +125,10 @@ function App() {
   return (
     
 
-  <div>
-
-  <Form1
-   h3Label="Mitt formulär"
-        textLabel="Skriv ditt namn"
-        dateLabel="Välj datum"
-        placeholder="Exempel: Anna"
-        buttonText="Skicka"
-  />
-     </div>
+ 
+    <LoggView
+    />
+    
   );
 }
 

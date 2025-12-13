@@ -11,3 +11,9 @@
     color: #F4EDE7;
    
 }
+
+.logg-button {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}

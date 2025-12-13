@@ -1,0 +1,30 @@
+.logg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+.user-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-right: 80px;
+    color: #F4EDE7;
+}
+
+.text-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+.text-logg {
+    color: #F4EDE7;
+    margin-top: 40px;
+    margin-right: 180px;
+}
