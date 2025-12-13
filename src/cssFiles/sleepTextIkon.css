@@ -1,0 +1,11 @@
+.sleep-row {
+    display: flex;
+    align-items: flex-start;
+   
+   
+}
+
+.sleep-text {
+    color:#F4EDE7 ;
+    line-height: 2;
+}

@@ -1,0 +1,32 @@
+   .reminder-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 12px;
+    position: fixed;
+    border-radius: 10px;
+    text-align: center;
+    height:98px ;
+    width: 390px;
+    background-color:#1E1456;
+    margin: 0;
+    top: 0;
+    
+}
+
+
+.reminder-text {
+    font-size: 16px;
+    color: #F4EDE7;
+}
+
+.reminder-mascot {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+

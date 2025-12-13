@@ -1,6 +1,9 @@
 import houseIkon from "../ikons/houseIkon.svg";
 import { useNavigate } from "react-router-dom";
 
+
+
+
 function House() {
   const navigate=useNavigate();
 

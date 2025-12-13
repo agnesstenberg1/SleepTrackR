@@ -31,8 +31,14 @@ import Trash from "./components/ikons/trash";
 import Logo from "./components/logo/logo";
 import CloseButtonLight from "./components/buttons/closeButtonLight";
 import SmallButton from "./components/buttons/smallButton";
-import HappyMascot from "./components/mascot/happyMascot";
 import TiredMascot from "./components/mascot/tiredMascot";
+import BottomMenu from "./components/menu/bottomMenu";
+import Reminder from "./components/reminder/reminder";
+import HappyMascot from "./components/mascot/happyMascot";
+import SleepyMascot from "./components/mascot/tiredMascot";
+import SleepTextIkon from "./components/information/sleepTextIkon";
+import Form1 from "./components/forms/form1";
+
 
 function App() {
   const [logs, setLogs] = useState([]);
@@ -115,8 +121,16 @@ function App() {
   return (
     
 
-      <ResultAchieved/>
-    
+  <div>
+
+  <Form1
+   h3Label="Mitt formulär"
+        textLabel="Skriv ditt namn"
+        dateLabel="Välj datum"
+        placeholder="Exempel: Anna"
+        buttonText="Skicka"
+  />
+     </div>
   );
 }
 
