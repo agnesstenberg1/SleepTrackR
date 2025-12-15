@@ -1,10 +1,21 @@
 .weekly-sum {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
-    min-height: 50vh;   
+    flex-direction: column;
+    width: 100%;
+    margin-top: -170px;
+    max-width: 700px;
+    
+
+}
+
+.diagram {
+    width: 600px;
+   
+}
+
+.nav-box {
+    margin-top: 150px;
 }
 
 .nav-arrows {
@@ -27,16 +38,37 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    margin-left: 60px;
    
     
 }
 .box-text {
     color:#F4EDE7 ;
     font-size: 16px;
+    text-align: center;
 }
 
 .goal-text {
-    color:#FFF8C5 ; 
+    color:#F4EDE7 ; 
     font-size: 16px;
+    margin-top: 45px;
+    margin-bottom: -10px;
+
+}
+
+.diagram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-right: 40px;
+    padding-right: 20px;
+    
+    
+}
+
+.bottom-text {
+    color: #FFF8C5;
+  
 }

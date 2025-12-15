@@ -1,99 +1,38 @@
-import { BarChart, Bar } from 'recharts';
+import { BarChart, Bar, ReferenceLine, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+
+const Diagram = ({ logs = [] }) => {
 
 
-//kolla om det är okej att använda recharts som bibliotek och ta denna
-//komponent ifrån, om det är okej- ta bort inline css och gör egen fil
-//kolla även hur man importerar data i diagramet från firebase, lägg sedan in denna komponent i weeklySum
-const data = [
-  {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
-  },
-  {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
-  },
-  {
-    name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
-  },
-  {
-    name: 'Page D',
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
-  },
-  {
-    name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: 'Page F',
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
-];
+  const weekdays = ['mån', 'tis', 'ons', 'tors', 'fre', 'lör', 'sön'];
 
-const TinyBarChart = () => {
+
+  const logMap = {};
+  logs.forEach(log => {
+    const dayLetter = new Date(log.date).toLocaleDateString('sv-SE', { weekday: 'short' });
+    logMap[dayLetter] = (logMap[dayLetter] || 0) + log.hours + log.minutes / 60;
+  });
+
+
+  const data = weekdays.map(day => ({
+    name: day,
+    uv: logMap[day] || 0
+  }));
+
   return (
-    <BarChart
-      style={{ width: '100%', maxWidth: '300px', maxHeight: '100px', aspectRatio: 1.618 }}
-      responsive
-      data={data}
-    >
-      <Bar dataKey="uv" fill="#8884d8" />
-    </BarChart>
+    <ResponsiveContainer width="100%" height={300}>
+      <BarChart
+        data={data}
+        margin={{ top: 20, right: 0, left: 0, bottom: 20 }}
+        barCategoryGap={10}
+      >
+        <XAxis dataKey="name" />
+        <YAxis domain={[0,15]} />
+        <Tooltip formatter={(value) => `${Math.floor(value)}h ${Math.round((value % 1) * 60)}min`} />
+        <ReferenceLine y={8.5} stroke="white" strokeDasharray="3 3" />
+        <Bar dataKey="uv" fill="#4caf50" radius={[4, 4, 0, 4]} />
+      </BarChart>
+    </ResponsiveContainer>
   );
 };
 
-export default TinyBarChart;
-
-
-//förslag från ch
-
-//import React from "react";
-//import "./tinyBarChart.css";
-
-//const data = [
-  //{ name: 'Page A', uv: 4000 },
-  //{ name: 'Page B', uv: 3000 },
-  //{ name: 'Page C', uv: 2000 },
-  //{ name: 'Page D', uv: 2780 },
-  //{ name: 'Page E', uv: 1890 },
-  //{ name: 'Page F', uv: 2390 },
-  //{ name: 'Page G', uv: 3490 },
-//];
-
-//const TinyBarChart = () => {
-  //const maxValue = Math.max(...data.map(d => d.uv));
-
-  //return (
-    //<div className="tiny-bar-chart">
-      //{data.map((d, index) => (
-        //<div key={index} className="bar-container">
-          //<div
-            //className="bar"
-            //style={{ height: `${(d.uv / maxValue) * 100}%` }}
-          //></div>
-        //</div>
-      //))}
-    //</div>
-  //);
-//};
-
-//export default TinyBarChart;
+export default Diagram;

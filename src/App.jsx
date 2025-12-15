@@ -9,7 +9,7 @@ import { rdb } from "./firebase";
 import { ref, push, onValue, remove } from "firebase/database";
 
 
-
+import { Routes, Route } from 'react-router-dom';
 
 
 
@@ -38,10 +38,12 @@ import HappyMascot from "./components/mascot/happyMascot";
 import SleepyMascot from "./components/mascot/tiredMascot";
 import SleepTextIkon from "./components/information/sleepTextIkon";
 import Form1 from "./components/forms/form1";
-import WeeklySum from "./components/weeklySummaries/WeeklySum";
+
 import RewardsScroll from "./components/rewards/rewardsScroll";
 import TemplateView from "./components/templates/templateView";
 import LoggView from "./viewes/loggView";
+import Diagram from "./components/weeklySummaries/diagram";
+import WeeklySummaryView from "./viewes/weeklySummaryView";
 
 function App() {
   const [logs, setLogs] = useState([]);
@@ -122,14 +124,18 @@ function App() {
     }
   };
 
-  return (
-    
 
- 
-    <LoggView
-    />
-    
+  
+  return (
+    <Routes>
+      <Route path="/" element={<LoggView/>} />
+      
+
+      <Route
+        path="/WeeklySummaryView"
+        element={<WeeklySummaryView logs={logs} />}
+      />
+    </Routes>
   );
 }
-
 export default App;

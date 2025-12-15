@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     color: #F4EDE7;
+    margin-top: 10px;
    
 }
 
@@ -16,4 +17,11 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+
+.logg-button-text {
+    
+    color: #F4EDE7;
+    justify-content: center;
+    align-items: center;
 }

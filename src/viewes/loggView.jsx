@@ -6,7 +6,7 @@ import HappyMascot from '../components/mascot/happyMascot';
 import BottomMenu from '../components/menu/bottomMenu';
 import SleepTextIkon from '../components/information/sleepTextIkon';
 
-function LoggView() {
+function LoggView({addLog}) {
   return (
   <div className="logg-container">
     <Appheader/>
@@ -22,7 +22,9 @@ function LoggView() {
     <h3>Godkväll Oskar</h3>
     </div>
 
-    <LoggButton/>
+    <LoggButton 
+    text="Starta sömn"
+    />
   
    <BottomMenu/>
    <SleepTextIkon/>

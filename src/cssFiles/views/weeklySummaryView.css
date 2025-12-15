@@ -1,0 +1,6 @@
+.weekly-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 10px;
+}

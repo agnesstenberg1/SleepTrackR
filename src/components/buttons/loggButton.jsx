@@ -1,17 +1,17 @@
+import { useState } from "react";
 import '../../cssFiles/loggButton.css';
 
+function LoggButton({text}) {
 
-    function LoggButton ()  {
-        return (
 
-<div className='logg-button'>
+  return (
+    <div className='logg-button'>
+      <div className="cirkle">
+      <h2 className="logg-button-text">{text}</h2>
+      </div>
+      </div>
+    
+  );
+}
 
-   <div className="cirkle">
-   <h2>Starta Sömn </h2>
-   </div>
-   
-</div>
-
-        );
-    }
-    export default LoggButton;
+export default LoggButton;
