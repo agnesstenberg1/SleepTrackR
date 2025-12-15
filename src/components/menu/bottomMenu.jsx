@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -14,10 +16,10 @@ function BottomMenu() {
         <Container className="bottom-menu-2">
            
           <Nav className="bottom-menu-nav">
-            <Nav.Link href="#home" className="menu-ikon"><House/></Nav.Link>
-            <Nav.Link href="#overview" className="menu-ikon"><Overview/></Nav.Link>
-            <Nav.Link href="#rewards" className="menu-ikon"><Rewards/></Nav.Link>
-            <Nav.Link href="#settings" className="menu-ikon"><Settings/></Nav.Link>
+            <Nav.Link as={Link} to="/loggview" className="menu-ikon"><House/></Nav.Link>
+            <Nav.Link as={Link} to="/weeklysummaryview" className="menu-ikon"><Overview/></Nav.Link>
+            <Nav.Link as={Link} to="/rewardsview" className="menu-ikon"><Rewards/></Nav.Link>
+            <Nav.Link as={Link} to="/settingsview" className="menu-ikon"><Settings/></Nav.Link>
           </Nav>
           
         </Container>

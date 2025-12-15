@@ -2,7 +2,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 //import { themeContext } from './themeContext'; //från föreläsningen
-import React, { useState, useContext, useEffect } from "react"; // från föreläsning data
+import React, { useState, useEffect } from "react"; // från föreläsning data
 
 /* Firebase imports for Realtime Database operations */
 import { rdb } from "./firebase";
@@ -44,6 +44,8 @@ import TemplateView from "./components/templates/templateView";
 import LoggView from "./viewes/loggView";
 import Diagram from "./components/weeklySummaries/diagram";
 import WeeklySummaryView from "./viewes/weeklySummaryView";
+import RewardsView from "./viewes/rewardsView";
+import SettingsView from "./viewes/settingsView";
 
 function App() {
   const [logs, setLogs] = useState([]);
@@ -128,13 +130,18 @@ function App() {
   
   return (
     <Routes>
-      <Route path="/" element={<LoggView/>} />
+      <Route path="/loggview" element={<LoggView/>} />
       
 
       <Route
         path="/WeeklySummaryView"
         element={<WeeklySummaryView logs={logs} />}
       />
+
+            <Route path="/RewardsView" element={<RewardsView />} />
+
+     
+      <Route path="/SettingsView" element={<SettingsView />} />
     </Routes>
   );
 }
