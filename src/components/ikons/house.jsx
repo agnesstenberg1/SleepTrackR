@@ -10,7 +10,7 @@ function House() {
 
     function onHouse(event){
       event.preventDefault();
-      navigate("/LoggView")
+      navigate("/LoggViewAchieved")
     }
 
     return (

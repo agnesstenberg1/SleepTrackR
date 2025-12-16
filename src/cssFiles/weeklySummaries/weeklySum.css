@@ -3,7 +3,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-top: -170px;
+    
     max-width: 700px;
     
 
@@ -18,15 +18,12 @@
     margin-top: 150px;
 }
 
-.nav-arrows {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
+
 
 .week-text {
     color:#F4EDE7 ;
     font-size: 20px;
+    font-weight: 600;
 }
 
 .box-weekly {
@@ -38,7 +35,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 60px;
     margin-top: 30px ;
    
     
@@ -72,4 +68,48 @@
 .bottom-text {
     color: #FFF8C5;
   
+}
+
+.week-header {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-week-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.nav-arrow {
+  cursor: pointer;
+  width: 30px; /* justera storlek */
+  height: 30px;
+}
+
+.nav-arrow.prev {
+  position: absolute;
+  left: 0;
+}
+
+.nav-arrow.next {
+  position: absolute;
+  right: 0;
+}
+
+.week-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel-container .carousel-control-prev,
+.carousel-container .carousel-control-next {
+  position: absolute;
+  top: -500px;
 }

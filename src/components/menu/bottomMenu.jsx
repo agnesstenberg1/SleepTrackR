@@ -16,7 +16,7 @@ function BottomMenu() {
         <Container className="bottom-menu-2">
            
           <Nav className="bottom-menu-nav">
-            <Nav.Link as={Link} to="/loggview" className="menu-ikon"><House/></Nav.Link>
+            <Nav.Link as={Link} to="/loggviewAchieved" className="menu-ikon"><House/></Nav.Link>
             <Nav.Link as={Link} to="/weeklysummaryview" className="menu-ikon"><Overview/></Nav.Link>
             <Nav.Link as={Link} to="/rewardsview" className="menu-ikon"><Rewards/></Nav.Link>
             <Nav.Link as={Link} to="/settingsview" className="menu-ikon"><Settings/></Nav.Link>

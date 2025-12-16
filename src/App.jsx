@@ -41,11 +41,14 @@ import Form1 from "./components/forms/form1";
 
 import RewardsScroll from "./components/rewards/rewardsScroll";
 import TemplateView from "./components/templates/templateView";
-import LoggView from "./viewes/loggView";
+import LoggViewAchieved from "./viewes/loggViewAchieved";
 import Diagram from "./components/weeklySummaries/diagram";
 import WeeklySummaryView from "./viewes/weeklySummaryView";
 import RewardsView from "./viewes/rewardsView";
 import SettingsView from "./viewes/settingsView";
+import ResultView from "./viewes/resultView";
+import LoggViewNotAchieved from "./viewes/loggViewNotAchieved";
+import ResultViewNot from "./viewes/resultViewNot";
 
 function App() {
   const [logs, setLogs] = useState([]);
@@ -130,16 +133,19 @@ function App() {
   
   return (
     <Routes>
-      <Route path="/loggview" element={<LoggView/>} />
+      <Route path="/loggviewAchieved" element={<LoggViewAchieved/>} />
+            <Route path="/loggviewNotAchieved" element={<LoggViewNotAchieved/>} />
+ <Route path="/resultView" element={<ResultView />} />
+       <Route path="/ResultViewNot" element={<ResultViewNot/>} />
       
-
       <Route
+      
         path="/WeeklySummaryView"
         element={<WeeklySummaryView logs={logs} />}
       />
 
             <Route path="/RewardsView" element={<RewardsView />} />
-
+            
      
       <Route path="/SettingsView" element={<SettingsView />} />
     </Routes>

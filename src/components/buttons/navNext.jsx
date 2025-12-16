@@ -5,10 +5,10 @@ import "../../cssFiles/navNext.css";
 
 
     function NavNext ()  {
-        const navigate=useNavigate();
+        
 
         function handleNext(){
-            navigate("/nextPage"); //byt sen till rätt route 
+           
         }
 
         return (

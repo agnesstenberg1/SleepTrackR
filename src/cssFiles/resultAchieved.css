@@ -3,7 +3,7 @@
        width: 370px;
        height: 418px;
        border-radius: 20px;
-       background-color: rgb(31, 0, 102); /* göra denna i rätt färg, men se till att den inte lyser igenom med den gröna indikatorn då */
+       background-color: #1E1456;
        display: flex;
        align-items: center;
        justify-content: center;

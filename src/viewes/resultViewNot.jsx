@@ -9,12 +9,12 @@ function ResultView() {
   return (
   <div className="result-container">
     <LoggTemplate
-    day="Måndag"
-    date="22 November"
+    day="Tisdag"
+    date="23 November"
     />
     
     <div className='result-achieved'>
-    <ResultAchieved/>
+    <ResultNotAchieved/>
     </div>
    </div>
 

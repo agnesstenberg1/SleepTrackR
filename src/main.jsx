@@ -15,7 +15,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 
 
-import LoggView from './viewes/loggView';
+import LoggView from './viewes/loggViewAchieved';
 import RewardsView from './viewes/rewardsView';
 import SettingsView from './viewes/settingsView';
 

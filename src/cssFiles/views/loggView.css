@@ -23,8 +23,29 @@
     flex-direction: column;
 }
 
-.text-logg {
+.text-logg h3 {
     color: #F4EDE7;
-    margin-top: 40px;
-    margin-right: 180px;
+    margin: 0;
+
 }
+
+.text-calendar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 140px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+
+.result-achieved {
+ position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 30px;
+  display: flex;
+ 
+}
+

@@ -3,14 +3,19 @@ import AchievedMascot from "./achievedMascot";
 import TimeIndicatorSmallerAchieved from "../timeIndicator/timeIndicatorSmallerAchieved";
 import CloseButtonLight from "../buttons/closeButtonLight";
 import "../../cssFiles/resultAchieved.css";
-
+import { useNavigate } from "react-router-dom";
 
     
-    function ResultAchieved ({onClose})  {
+    function ResultAchieved ()  {
+        const navigate = useNavigate();
+
+         const handleClose = () => {
+    navigate("/loggViewNotAchieved");
+  };
         return (
 
 <div className="wrapper">
-    <CloseButtonLight onClose={onClose} className="close-button"/>
+    <CloseButtonLight onClick={handleClose} className="close-button"/>
 <h1>Resultat:</h1>
 
  <TimeIndicatorSmallerAchieved/>

@@ -1,5 +1,4 @@
-import NavNext from "../buttons/navNext";
-import NavPre from "../buttons/navPre";
+
 import "../../cssFiles/weeklySummaries/weeklySum.css";
 import Diagram from "./diagram";
 
@@ -10,17 +9,14 @@ import Diagram from "./diagram";
      
     return (
         <div className="weekly-sum">
-            <div className="nav-box">
-        <div className="nav-arrows">
-        <NavPre />
-         <div className="week-text"> {weekText}</div>
-        <NavNext/>
+            <div className="week-header">
+             <h2 className="week-text"> {weekText}</h2>
         </div>
 
        <div className="box-weekly">
     <div className="box-text">{boxText}</div>
         </div>
-        </div>
+        
         
 
     
