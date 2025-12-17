@@ -1,4 +1,4 @@
-import { BarChart, Bar, ReferenceLine, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
+import { BarChart, Bar, Cell, ReferenceLine, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
 const Diagram = ({ logs = [] }) => {
 
@@ -29,7 +29,12 @@ const Diagram = ({ logs = [] }) => {
         <YAxis domain={[0,15]} />
         <Tooltip formatter={(value) => `${Math.floor(value)}h ${Math.round((value % 1) * 60)}min`} />
         <ReferenceLine y={8.5} stroke="white" strokeDasharray="3 3" />
-        <Bar dataKey="uv" fill="#4caf50" radius={[4, 4, 0, 4]} />
+        <Bar dataKey="uv" radius={[4,4,0,4]}> 
+          {data.map((entry,index) => (
+            <Cell key={`cell-${index}`}fill={entry.uv <8.5 ? '#D84648':'#33A156'}/>
+          ))}
+
+         </Bar>
       </BarChart>
     </ResponsiveContainer>
   );

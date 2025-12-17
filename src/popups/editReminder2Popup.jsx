@@ -1,19 +1,20 @@
 import Modal from 'react-bootstrap/Modal';
-import Form3 from '../components/forms/form3';
+import Form2 from '../components/forms/form2';
 import '../cssFiles/forms/form.css';
 import SmallButton from '../components/buttons/smallButton';
 
-function NewReminderPopup({ show, onClose }) {
+function EditReminder2Popup({ show, onClose}) {
   return (
     <Modal show={show} onHide={onClose} centered>
       <Modal.Body className='form'>
         
         <Modal.Header className='button' closeButton>
-        <Modal.Title className='title'>Ny påminnelse</Modal.Title>
+        <Modal.Title className='title'>Ändra påminnelse</Modal.Title>
         </Modal.Header>
-        <Form3
-          placeholder="Välj namn"
-          buttonText="Lägg till"
+        <Form2
+          placeholder="Lägga bort mobilen"
+          timeValue="22:00"
+          buttonText="Spara"
           onClose={onClose} 
         />
      
@@ -24,4 +25,4 @@ function NewReminderPopup({ show, onClose }) {
   );
 }
 
-export default NewReminderPopup;
+export default EditReminder2Popup;

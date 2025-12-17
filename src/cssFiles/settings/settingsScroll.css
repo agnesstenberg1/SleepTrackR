@@ -39,6 +39,44 @@
     margin-left: 150px;
 }
 
+.title-sleep {
+    color:#F4EDE7 ;
+    margin-bottom: -40px;
+}
+
+.box-sleep {
+    background-color: #1E1456;
+    height: 90px ;
+    width: 372px;
+    border-radius: 10px;
+    margin: 16px auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.7);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    
+}
+
+.sleep-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.sleep-right {
+    display: flex;
+    align-items: center;
+}
+
+.pencil-ikon {
+    cursor: pointer;
+    margin-left: 320px;
+    
+}
+
+
 
 
 

@@ -6,7 +6,7 @@ function SmallButton({text, onClick}) {
 
   return (
     
-      <Button className="small-button" variant="primary" onClick={onClick}>
+      <Button className="small-button" onClick={onClick}>
         {text}
       </Button>
     

@@ -1,0 +1,26 @@
+.days {
+    display: flex;
+    position: fixed;
+    color: #F4EDE7;
+    flex-direction: row;
+    gap: 45px;
+
+
+}
+
+.form {
+    height: 562px;
+    overflow-y: auto;
+    
+    
+}
+
+.title {
+    position: fixed;
+}
+
+.result-days {
+    margin-top: 50px;
+    
+    
+}

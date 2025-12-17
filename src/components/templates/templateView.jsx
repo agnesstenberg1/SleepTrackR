@@ -5,6 +5,7 @@ import BottomMenu from "../menu/bottomMenu";
 
 
 
+
     function TemplateView  ({viewTitle})  {
      
 

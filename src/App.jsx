@@ -133,21 +133,22 @@ function App() {
   
   return (
     <Routes>
-      <Route path="/loggviewAchieved" element={<LoggViewAchieved/>} />
+      <Route path="/" element={<LoggViewAchieved/>} />
+       <Route path="/loggViewAchieved" element={<LoggViewAchieved/>} />
             <Route path="/loggviewNotAchieved" element={<LoggViewNotAchieved/>} />
  <Route path="/resultView" element={<ResultView />} />
-       <Route path="/ResultViewNot" element={<ResultViewNot/>} />
+       <Route path="/resultViewNot" element={<ResultViewNot/>} />
       
       <Route
       
-        path="/WeeklySummaryView"
+        path="/weeklySummaryView"
         element={<WeeklySummaryView logs={logs} />}
       />
 
-            <Route path="/RewardsView" element={<RewardsView />} />
+            <Route path="/rewardsView" element={<RewardsView />} />
             
      
-      <Route path="/SettingsView" element={<SettingsView />} />
+      <Route path="/settingsView" element={<SettingsView />} />
     </Routes>
   );
 }

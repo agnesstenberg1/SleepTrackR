@@ -5,7 +5,7 @@ import Pencil from "../ikons/pencil";
 import SleepTextIkon from "../information/sleepTextIkon";
 
 function SettingsBox({ titel, text, button, ikon, }) {
-  const IkonComponent =ikon;
+  
   return (
     <div className="setting-box">
         <div className="setting-text">
@@ -13,12 +13,11 @@ function SettingsBox({ titel, text, button, ikon, }) {
                 <p className="small-text">{text}</p>
         </div>
         <div className="button-ikon-container">
-        <div className="setting-button">{button && <ControlButton/>}
-        <div className="ikon">{ikon && <IkonComponent/>}
+        <div>{button && <ControlButton/>}</div>
+       <div> {ikon}</div>
             </div>
             </div>
-            </div>
-        </div>
+          
       
     
   );

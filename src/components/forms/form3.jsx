@@ -2,13 +2,17 @@ import Form from 'react-bootstrap/Form';
 import SmallButton from '../buttons/smallButton';
 import "../../cssFiles/forms/form.css";
 
-function Form1({h3Label, textLabel, dateLabel, timeValue, buttonText, onClose}) {
+function Form3({h3Label, textLabel, dateLabel, placeholder, timeValue, buttonText, onClose}) {
   return (
     <div className="form-box">
     <Form>
-      <Form.Group className="form-group-2">
+       <Form.Group className="form-group-1">
+        <Form.Label className='form-text'>{textLabel}</Form.Label>
+        <Form.Control type="text" placeholder={placeholder} />
+      </Form.Group>
+       <Form.Group className="form-group-2">
         <Form.Label className='form-text'>{dateLabel}</Form.Label>
-        <Form.Control type="time" defaultValue={"22:00"} />
+        <Form.Control type="time"/>
       </Form.Group>
     </Form>
     <div className='button-form'>
@@ -18,4 +22,4 @@ function Form1({h3Label, textLabel, dateLabel, timeValue, buttonText, onClose}) 
   );
 }
 
-export default Form1;
+export default Form3;

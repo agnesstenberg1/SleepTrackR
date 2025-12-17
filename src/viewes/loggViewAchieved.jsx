@@ -10,24 +10,35 @@ import TimeIndicatorAchieved from '../components/timeIndicator/timeIndicatorAchi
 import { useState } from "react";
 import LoggButtonTime from '../components/timeIndicator/loggButtonTime';
 import LoggButtonNotTime from '../components/timeIndicator/loggButtonTimeNot';
-
+import SleepGoalPopup from '../popups/sleepgoalPopup';
+import CalenderPopup from '../popups/calenderPopup';
 
 function LoggViewAchieved({addLog}) {
-  const [showTimer, setShowTimer] = useState(false);
+  const [showTimer, setShowTimer] = useState(false); //ska loggknappen vara en timer?
+   const [showPopup, setShowPopup] = useState(false);
+   const [showCalenderPopup, setShowCalenderPopup] = useState(false);
+
 
   return (
-
+//byt ut detta mot loggtemplate
   <div className="logg-container">
     <Appheader/>
 
-<div className='text-calendar'>
+<div className='text-calendar'> 
     <div className='text-logg'>
     <h3>Måndag</h3>
     <h3>22 November</h3>
     </div>
 
     <div className='calender-ikon'> 
-      <Calendar/> </div>
+      <Calendar onClick={() => setShowCalenderPopup(true)} /> 
+      </div>
+      <>
+      <CalenderPopup
+        show={showCalenderPopup}
+        onClose={() => setShowCalenderPopup(false)}
+      />
+    </>
     </div>
 
 <div className='text-button'>
@@ -47,9 +58,18 @@ function LoggViewAchieved({addLog}) {
       )}
     </div>
 
+        <>
+      <SleepTextIkon onClick={() => setShowPopup(true)} />
+
+      <SleepGoalPopup
+        show={showPopup}
+        onClose={() => setShowPopup(false)}
+      />
+    </>
+
   
    <BottomMenu/>
-   <SleepTextIkon/>
+   
     </div>
    </div>
 

@@ -4,7 +4,7 @@
   border-radius: 10px;
   background-color: #1E1456;
   width: 339px;
-  height: 431px;
+  height: 331px;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
@@ -15,12 +15,11 @@
 
 .form-box h3 {
   color: #fff;
-  margin-bottom: 20px;
 }
 
 .form-text {
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 
@@ -28,6 +27,18 @@
 .button-form{
     position: absolute;
     bottom: 20px;
-    left: 200px;  
+    left: 200px; 
     
+}
+
+.form {
+  background-color: #1E1456;
+}
+
+.title{
+  font-size: 24px ;
+}
+
+.button {
+  filter: invert(1);
 }

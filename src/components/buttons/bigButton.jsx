@@ -6,7 +6,7 @@ function BigButton({text, onClick}) {
 
   return (
     
-      <Button className="big-button" variant="primary" onClick={onClick}>
+      <Button className="big-button" onClick={onClick}>
         {text}
       </Button>
     

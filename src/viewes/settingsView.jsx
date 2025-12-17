@@ -1,7 +1,8 @@
-
+import { useState } from "react";
+import Pencil from "../components/ikons/pencil";
 import SettingsScroll from "../components/settings/settingsScroll";
 import TemplateView from "../components/templates/templateView";
-
+import SleepGoalPopup from "../popups/sleepgoalPopup";
 
 
 
@@ -12,6 +13,8 @@ function SettingsView() {
         viewTitle="Inställningar"
         />
         <SettingsScroll/>
+
+  
         </div>
       
     
