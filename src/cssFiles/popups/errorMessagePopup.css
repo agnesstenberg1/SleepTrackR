@@ -1,6 +1,17 @@
-.buttons {
+.buttons-3 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
+    margin-top: 20px;
+}
+
+.form-3 {
+    background-color: #1E1456;
+    height: 200px;
+}
+
+
+.title-3 {
+    color: #F4EDE7;
 }

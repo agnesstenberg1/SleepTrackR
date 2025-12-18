@@ -1,33 +1,55 @@
 import Modal from 'react-bootstrap/Modal';
-import '../cssFiles/popups/calenderPopup.css';
 
+import CalenderRow from '../components/calender/calenderRow';
 import SmallButton from '../components/buttons/smallButton';
 import TimeIndicatorCalendarAchieved from '../components/timeIndicator/timeIndicatorCalendarAchieved';
 import TimeIndicatorCalendarNotAchieved from '../components/timeIndicator/timeIndicatorCalendarNotAchieved';
 
-function CalenderPopup({ show, onClose}) {
+//lösa krysset så de inte ligger över och har vitbakgrund
+function CalenderPopup({ show, onClose}) { //ändra så alla classname har "" och inte ''- ändra så allt är samma överallt i alla saker 
   return (
     <Modal show={show} onHide={onClose} centered>
-      <Modal.Body className='form'>
-        
-        <Modal.Header className='button' closeButton>
-        <Modal.Title className='title'>November</Modal.Title>
-        </Modal.Header>
-        <div className='days'>
-        <p>M</p> <p>T</p> <p>O</p> <p>T</p> <p>F</p> <p>L</p> <p>S</p>
+     
+     
+      <Modal.Header closeButton >   
+       
+      </Modal.Header>
+
+        <Modal.Body className="form">
+                <div className='days'>
+          <p className='monday'>M</p> 
+          <p className='tuesday'>T</p> 
+          <p className='wednesday'>O</p> 
+          <p className='thursday'>T</p> 
+          <p className='friday'>F</p> 
+          <p className='saturday'>L</p> 
+          <p className='sunday'>S</p>
         </div>
 
-        <div className='result-days'>
-       <TimeIndicatorCalendarAchieved/>
-       <TimeIndicatorCalendarAchieved/>
-       <TimeIndicatorCalendarAchieved/>
-        <TimeIndicatorCalendarNotAchieved/>
-     <TimeIndicatorCalendarNotAchieved/>
-       <TimeIndicatorCalendarAchieved/>
-     <TimeIndicatorCalendarNotAchieved/>
-</div>
-     
-     
+        
+
+
+      <CalenderRow 
+          monthName="November"
+  daysStatus={[
+    "achieved","achieved","notAchieved","achieved","notAchieved","achieved","notAchieved",
+    "achieved","notAchieved","achieved","notAchieved","achieved","notAchieved","achieved",
+    "achieved","achieved","notAchieved","achieved","notAchieved","achieved","notAchieved",
+    "achieved","achieved","notAchieved","achieved","notAchieved","achieved","achieved"
+  ]}
+        />
+
+
+      <CalenderRow 
+          monthName="December"
+  daysStatus={[
+    "achieved","achieved","notAchieved","achieved","notAchieved","achieved","notAchieved",
+    "achieved","notAchieved","achieved","notAchieved","achieved","notAchieved","achieved",
+    "achieved","achieved","notAchieved","achieved","notAchieved","achieved","notAchieved",
+    "achieved","achieved","notAchieved","achieved","notAchieved","achieved","achieved"
+  ]}
+        />
+       
       </Modal.Body>
        
     </Modal>

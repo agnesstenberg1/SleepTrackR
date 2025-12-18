@@ -17,10 +17,14 @@
        width: 40px;
        height: 40px;
        background: rgb(31, 0, 102); /* göra i rätt färg */
-       border-radius: 50%;
-       
-    
-       
+       border-radius: 50%;   
+   }
+
+   .text-inner {
+    color: #F4EDE7;
+    z-index: 10;
+    transform: rotate(180deg); 
+    margin-top: 18px;
    }
   
   
