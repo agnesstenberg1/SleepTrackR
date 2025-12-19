@@ -21,9 +21,8 @@
 }
 
 .title {
-   
     color: #F4EDE7;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .result-days {
@@ -35,8 +34,25 @@
     
 }
 
-.header {
+.header-button {
     margin-bottom: 20px;
+    filter: invert(1);
+    margin-left: 40px;
+    
+    
 }
+
+.days-button {
+    background-color: #1E1456;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-width: 350px;
+    margin-top: -40px;
+    justify-content: center;
+    align-items: center;
+    display:block;
+}
+
 
 

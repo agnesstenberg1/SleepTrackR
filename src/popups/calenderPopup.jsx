@@ -9,13 +9,14 @@ import TimeIndicatorCalendarNotAchieved from '../components/timeIndicator/timeIn
 function CalenderPopup({ show, onClose}) { //ändra så alla classname har "" och inte ''- ändra så allt är samma överallt i alla saker 
   return (
     <Modal show={show} onHide={onClose} centered>
+      <Modal.Body className="form">
      
-     
-      <Modal.Header closeButton >   
+     <div className='days-button'>
+      <Modal.Header className="header-button" closeButton >   
        
       </Modal.Header>
 
-        <Modal.Body className="form">
+       
                 <div className='days'>
           <p className='monday'>M</p> 
           <p className='tuesday'>T</p> 
@@ -26,7 +27,7 @@ function CalenderPopup({ show, onClose}) { //ändra så alla classname har "" oc
           <p className='sunday'>S</p>
         </div>
 
-        
+        </div>
 
 
       <CalenderRow 

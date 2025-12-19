@@ -1,13 +1,13 @@
 import React from "react";
-import "../../cssFiles/TimeIndicatorSmallerNotAchieved.css";
+import "../../cssFiles/TimeIndicatorNotOverview.css";
 
     
     function TimeIndicatorSmallerNotAchieved ({text})  {
         return (
 
 
-<div className="circular-bar-not">
-    <p className="text-circle"> {text}</p>
+<div className="circular-bar-overview">
+    <p className="text-circle-overview"> {text}</p>
 </div>
 
 
